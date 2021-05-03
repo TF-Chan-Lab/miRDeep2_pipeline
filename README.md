@@ -78,7 +78,7 @@ The output file will contain all entries of known miRNAs.
 
 ## 3. Differnetial expression anlaysis
 
-To perform differential expression analysis, the clean read is first mapped to the reference miRNA sequences. In step **1**, a miRNA sequences file, `miRDeep2_mature.fa`, is generated. This file can be used as the reference for mapping. Alternatively, a combination of sequences in `miRDP2_mature.fa` and those present in the pubic domain, e.g. miRBase, but missed by miRDeep-P2 can be also served as the reference. In the following analysis, the file of reference miRNA sequences is named `miRNA_ref.fa` and indexed using the following command.
+To perform differential expression analysis, the clean read is first mapped to the reference miRNA sequences. In step **1**, a miRNA sequences file, `miRDeep2_mature.fa`, is generated. This file can be used as the reference for mapping. Alternatively, a combination of sequences in `miRDeep2_mature.fa` and those present in the pubic domain, e.g. miRBase, but missed by miRDeep2 can be also served as the reference. In the following analysis, the file of reference miRNA sequences is named `miRNA_ref.fa` and indexed using the following command.
 
 `bowtie-build miRNA_ref.fa miRNA_ref.fa`
 
